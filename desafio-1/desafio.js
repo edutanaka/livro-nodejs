@@ -31,7 +31,7 @@ var server = http.createServer(function(request, response){
 
   // Renderizando a pagina html
   fs.readFile(pagina, function(err, html){
-    response.writeHeader(200, {'Content-Type': 'text/html'});
+    response.writeHead(200, {'Content-Type': 'text/html'});
     response.end(html);
   });
 });
